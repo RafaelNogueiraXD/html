@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Voltar</a>
+    </header>
+    <datalist id="browser">
+        <option value="firefox"></option>
+        <option value="chrome"></option>
+        <option value="opera"></option>
+    </datalist>
+    <h1>The fieldset element</h1>
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personalia:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="lname">Navegador:</label>
+  <input list="browser" name="browsers" id="browsers">
+  <datalist id="browser">
+      <option value="firefox"></option>
+      <option value="chrome"></option>
+      <option value="opera"></option>
+  </datalist><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="0">
+    =<output name="x" for="a b"></output>
+    </form>
+</body>
+</html>
